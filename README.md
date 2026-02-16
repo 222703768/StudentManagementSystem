@@ -21,7 +21,7 @@ public double calculateTuition() {
 }
 
 
-The tuition logic is contained within the specific student class — not mixed elsewhere.
+The tuition logic is contained within the specific student class, not mixed elsewhere.
 
 Liskov Substitution Principle (LSP)
 
