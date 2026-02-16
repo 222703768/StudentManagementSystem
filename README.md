@@ -1,3 +1,5 @@
+#StudentManagementSystem
+
 SOLID Principles Applied
 Single Responsibility Principle (SRP)
 
@@ -5,11 +7,11 @@ Each class has one responsibility:
 
 Student → Defines common structure and behavior.
 
-UndergraduateStudent → Handles undergraduate-specific data and tuition calculation.
+UndergraduateStudent: Handles undergraduate-specific data and tuition calculation.
 
-GraduateStudent → Handles graduate-specific logic.
+GraduateStudent: Handles graduate-specific logic.
 
-Builder classes → Responsible only for object construction.
+Builder classes: Responsible only for object construction.
 
 Example:
 
@@ -27,8 +29,8 @@ Objects of UndergraduateStudent and GraduateStudent can be used wherever Student
 
 Example:
 
-Student undergrad = new UndergraduateStudent.Builder(...).build();
-Student graduate = new GraduateStudent.Builder(...).build();
+Student undergrad = new UndergraduateStudent.Builder().build();
+Student graduate = new GraduateStudent.Builder().build();
 
 
 Both work through polymorphism.
