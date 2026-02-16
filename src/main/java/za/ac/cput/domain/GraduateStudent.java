@@ -1,0 +1,15 @@
+package za.ac.cput.domain;
+
+public abstract class GraduateStudent {
+    protected String studentId;
+    protected String name;
+    protected String email;
+    protected String department;
+
+    public abstract double calculateTuition();
+
+    public abstract String getStudentType();
+
+    public void displayStudentDetails() {
+    }
+}
